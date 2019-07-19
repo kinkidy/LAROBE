@@ -300,6 +300,12 @@ a {
   font-size: 15px;
 }
 
+.footer-bottom a {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+}
+
 .footer-bottom{
   margin-top: 50px;
   padding-bottom: 40px;
@@ -386,7 +392,7 @@ hr {
   position: relative;
   vertical-align: top;
   width: 20%;
-  margin: 40px 5px 80px 5px;
+  margin: 40px 25px 80px 30px;
 }
 @media (max-width: 1200px) {
   #exampleSlider .MS-content .item {
