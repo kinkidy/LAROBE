@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-/* body, html, .container {
-  width: 100%;
-} */
-
 body {
      
   font-family: 'Open Sans', sans-serif;
@@ -47,22 +43,6 @@ h1, h2, h3, h4, h5, h6 {
  h1 {
    font-size: 45px;
  }
-/* 
- .bg-image {
-  background-image: url('./pics/p1.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
- } */
-
-/* 
-@media screen and (min-width: 350px) {
-  .bg-image {
-    width: 100%;
-  }
-} */
-
-
 
 .container {
    /*Black w/opacity see-through*/
@@ -164,95 +144,6 @@ a {
   background-color:black;
   left: -10px;
 }
-/* .card {
-  position: relative;
-  margin: auto;
-  width: 900px;
-  height: 450px;
-  overflow: hidden;
-  margin-bottom: 10%;
-  margin-top: 5%;
-  border-radius: 5px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-} */
-
-/* @media screen and (min-width: 350px) {
-  .card{
-    width: 100%;
-  }
-} */
-
-/*Light blue cover above the slide show*/
-/* .card::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 900;
-
-  display: block;
-  width: 100%;
-  height: 100%;
-
-  background-color: rgba(140, 22, 115, 0.2);
-} */
-
-/* .card_part {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  
-  transform: translateX( 700px );
-  background-image: url('pics/pic2.png') ;  
-  animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
-}
-
-
-.card_part.card_part-two {
-  z-index: 2;
-  background-image: url('pics/pic1.png') ;
-  animation-delay: 7s;
-}
-
-.card_part.card_part-three {
-  z-index: 3;
-  background-image: url( 'pics/pic2.jpg' );
-  animation-delay: 14s;
-}
-
-.card_part.card_part-four {
-  z-index: 4;
-  background-image: url( 'pics/pic3.png' );
-  animation-delay: 21s;
-}
-
-
-@keyframes opaqTransition {
-  3% { transform: translateX( 0 ); }
-  25% { transform: translateX( 0 ); }
-  28% { transform: translateX( -700px ); }
-  100% { transform: translateX( -700px ); }
-} */
-
-
-/*box styling*/
-
-/* .box-wrapper {
-  display: grid;
-  grid-gap: 40px 40px;
-  grid-template-columns: 50px 50px 50px 50px;
-  grid-template-rows: auto;
-  grid-template-areas: "box1 . box2" "box3 . box 4";
-  justify-items: stretch;
-  
-  align-content: space-evenly; 
-} */
 
 .img {
   margin: 40px;
@@ -367,12 +258,6 @@ a {
   margin-bottom: 25px;
 }
 
-/* @media screen and (min-width: 350px) {
-  #exampleSlider {
-    width: 100%;
-  }
-} */
-
 @media (max-width: 767px) {
   #exampleSlider {
     border-color: transparent;
@@ -472,18 +357,6 @@ a {
   font-size: 20px !important;
 }
 
-/* @media screen and (min-width:350px){
-  .subscribe{
-    width: 100%;
-    padding: 0;
-    height: auto;
-    font-size: 10px;
-  }
-  .subscribe h2{
-    width: 50%;
-  }
-} */
-
  form {
     border: 1px solid #f1f1f1;
     padding: 50px 50px 50px 50px;
@@ -526,19 +399,6 @@ a {
   input[type=submit]:hover {
     opacity: 0.8;
   }
-
-/* @media screen and (min-width:350px){
-  form{
-    padding: 0;
-  }
-  input[type=text] {
-    width: 40%;
-    margin: 2px;
-  }
-  input[type=submit] {
-    width: 25%;
-  }
-}  */
 
 .footer{
   margin: auto;
@@ -623,19 +483,6 @@ a {
 hr {
   width: 850px;
 }
-
-
-
-/*  */
-/*  */
-/*  */
-/*  */
-
-/* background-blur */
-
-
-
-
 
 .box{
   margin: auto;
@@ -774,8 +621,7 @@ wardrobe
   background: darkmagenta;
   text-align: center;
   font-size: 25px;
-  /* opacity: 0.75;
-  filter: alpha (opacity = 75); */
+
 }
 
 .box:hover {
@@ -951,6 +797,6 @@ input{
   .bg-image {
     /* The file size of this background image is 93% smaller
        to improve page load speed on mobile internet connections */
-    background-image: url('pics/sa.jpg');
+    background-image: url('https://res.cloudinary.com/kinkidy/image/upload/v1575372195/larobe/p1.png');
   }
 }
