@@ -13,6 +13,19 @@ body {
   color: black;
   font-size: 15px;
   margin: auto;
+  
+  
+
+  /****blur*****/
+   
+}
+.container1{
+  background-image: url('./pics/bint.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(2px);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,7 +35,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Bilbo', cursive;
   font-weight: 400;
  /* text-transform: uppercase; */
-  color:#CE4A7EFF;
+  color:#e6bf33;
+  letter-spacing: 3px;
  
  }
  p {
@@ -33,35 +47,13 @@ h1, h2, h3, h4, h5, h6 {
  h1 {
    font-size: 45px;
  }
-
+/* 
  .bg-image {
   background-image: url('./pics/p1.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
- }
-
- /* .bg-image {
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: -2;
-  display: block;
-  background-image: url('pics/sa.jpg') ;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  width: auto;
-  height: auto;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-} */
+ } */
 
 /* 
 @media screen and (min-width: 350px) {
@@ -73,14 +65,14 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .container {
-    background-color: rgb(0,0,0); /*Fallback color */
-    background-color: rgba(255, 253, 253, 0.75); /*Black w/opacity see-through*/
+   /*Black w/opacity see-through*/
     font-weight: bold;
     position: relative;
     width: 100%;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+ 
 }
-
 .content {
   margin: auto;
   height: 100%;
@@ -90,22 +82,28 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
+
 }
 
 .navbar a{
-  color: #080808;
+  color: rgb(226, 205, 83);
   text-align: center; 
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 10px 30px;
   font-weight: lighter;
 }
 
-.navbar a:hover{
-  color: #CE4A7EFF;
+.active{
+  background-color: #87e2d0;
+  border-radius: 3px;
+  color: black !important
 }
 
-.navbar a:active{
-  color: rgb(231, 116, 162);
+.nav-item {
+  padding: 15px 0 15px 0; 
+  /* margin-bottom: 10px; */
+  background-color:rgba(255, 255, 255, 0.884);
+  width: 100%;
 }
 
 .header-icon-social {
@@ -127,20 +125,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 0px;   
 }
 
-.nav-item {
-  padding: 15px 0 15px 0;
-}
+
 
 .header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.753);
   padding: 10px 10px 0 10px;
   height: auto;
   overflow: hidden;
   width: 100%;
-  position: fixed;
+  position: relative;
   top: 0;
 }
 
@@ -153,19 +149,19 @@ a {
   flex-flow: row;
   justify-content: center;
   margin:20px 0 50px 0;
-  padding-top: 230px;
+  padding-top: 80px;
   padding-bottom: 100px;
 }
 .card-box {
   width: 570px;
   height:620px;
-  background-color: rgba(255, 253, 253, 0.75);
+  background-color: rgba(255, 253, 253, 0.877);
 }
 
 .card-box-in-box {
   margin:200px  auto;
   padding: 25px;
-  background-color: rosybrown;
+  background-color:black;
   left: -10px;
 }
 /* .card {
@@ -281,8 +277,8 @@ a {
 }
   /* dropdown button */
   .dropdown-btn {
-    background-color: black;
-    color: #CE4A7EFF;
+    background-color:#87e2d0;
+    color: #e3bf3a;
     padding: 16px;
     font-weight: lighter;
     font-family: 'Bilbo', cursive;
@@ -292,21 +288,29 @@ a {
   }
 
 .dropdown {
-  background-color: #080808;
+  background-color: #87e2d0;
   width: 30%;
   display: inline-block;
   font-size: 125%;
   margin-top: -15px;
   }
 
-  .wardrobe {
+  .dropdown h2 {
+    color: black !important;
+  }
+
+  .wardrobe  {
     display: grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 350px 350px;
     grid-template-rows: 430px 430px;
     grid-gap: 150px 100px;
     margin: 100px 0 130px 0;
     justify-content: center;
     padding-bottom: 40px;
+  }
+
+  .wardrobe img {
+    border-radius: 10px;
   }
 
   .mscontent, .mscontent-price{
@@ -316,13 +320,12 @@ a {
   }
 
   .mscontent-btn {
-    color: #CE4A7EFF;
+    color: #f8f8f7bd;
     font-size:13px; 
     letter-spacing: 3px; 
     width: 120px; 
     border:none; 
-    border-radius: 5px;
-    margin-top: -35px;
+    border-radius: 2px;
     padding: 12px; 
     background-color:black; 
     font-weight: bold;
@@ -330,7 +333,7 @@ a {
   }
 
   .mscontent-button {
-    color: #CE4A7EFF;
+    color: rgb(233, 211, 85);
     font-size:13px; 
     letter-spacing: 3px; 
     width: 120px; 
@@ -338,7 +341,7 @@ a {
     border-radius: 3px;
     margin-top:10px; 
     padding: 12px; 
-    background-color:black; 
+    background-color: seashell; 
     font-weight: bold;
     font-family: 'Bilbo', cursive;
   }
@@ -352,11 +355,12 @@ a {
  /* slide */
 #exampleSlider {
   background-color: seashell;
+  /* position: absolute; */
 }
 
 .exampleSlider-heading {
   width: 75%;
-  background-color: #080808;
+  background-color: #000000;
   display: inline-block;
   font-size: 125%;
   margin-top: -20px;
@@ -375,7 +379,7 @@ a {
   }
 }
 #exampleSlider .MS-content {
-  margin: 15px 5%;
+  margin: 0px 5%;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -388,9 +392,8 @@ a {
   display: inline-block;
   height: 100%;
   overflow: hidden;
-  vertical-align: top;
   width: 20%;
-  margin: 40px 25px 80px 30px;
+  margin: 40px 30px 30px 35px;
 }
 
 
@@ -419,19 +422,24 @@ a {
 }
 #exampleSlider .MS-controls button {
   border: none;
-  background: transparent;
-  font-size: 30px;
   outline: 0;
-  top: 50px;
-  bottom: 50px;
+  position: absolute;
+  margin-top: -400px;
+  height: 4%;
+  width: 4%;
+}
+
+#exampleSlider .MS-controls button:hover{
+  background-color: rgba(255, 255, 255, 0.295);
 }
 @media (max-width: 767px) {
   #exampleSlider .MS-controls button {
-    display: none;
+  display: none;  
   }
 }
 #exampleSlider .MS-controls button:hover {
   cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.253);
 }
 #exampleSlider .MS-controls .MS-left {
   left: 10px;
@@ -442,7 +450,7 @@ a {
   }
 }
 #exampleSlider .MS-controls .MS-right {
-  right: 15px;
+  right: 25px;
 }
 @media (max-width: 992px) {
   #exampleSlider .MS-controls .MS-right {
@@ -457,8 +465,11 @@ a {
 .subscribe {
   width: 100%;
   margin: auto;
-  padding: 40px 0 40px 0;
   font-size: 10px;
+}
+
+.subscribe h2 {
+  font-size: 20px !important;
 }
 
 /* @media screen and (min-width:350px){
@@ -507,8 +518,8 @@ a {
 
   input[type=submit] {
     width: 200px;
-    background-color: rgb(12, 12, 12);
-    color:#CE4A7EFF;
+    background-color: #87e2d0;
+    color:black;
     border: none;
   }
   
@@ -609,60 +620,11 @@ a {
   background-color: white;
 }
 
-/* @media screen and (min-width:350px){
-  .footer-end{
-    display: block;
-    width: 100%;
-    padding-top: 0;
-  }
-  .footer-p{
-    order: 0;
-    width: 100%;
-    margin: 0;
-    padding: 5px;
-  }
-  .footer-p p {
-    font-size: 10px;
-    line-height: 15px;
-  }
-  .ft-img{
-    order: 1;
-    width: 100%;
-    margin-top: 0;
-    padding-top: 10px;
-  }
-  .footer-end-img {
-    order: 2;
-    width: 100%;
-    align-content: center;
-  }
-  .ft-end-img{
-    margin:0 auto;
-  }
-  .footer-bottom{
-    margin-top: 10px;
-    padding: 0;
-  }
-  .nav-footer{
-    margin: 0;
-  }
-  .nav-footer a{
-    font-size: 10px;
-  }
-  .footer-bottom p {
-    font-size: 5px;
-  }
-} */
-
 hr {
   width: 850px;
 }
 
-/* @media screen and (min-width:350px) {
-  hr{
-    width: 80%;
-  }
-} */
+
 
 /*  */
 /*  */
@@ -782,15 +744,19 @@ wardrobe
 .wardrobe-heading {
   width: auto;
   height: auto;
-  background-color: #080808;
+  background-color: #87e2d0;
   display: inline-block;
   font-size: 125%;
-  margin-top: 180px;
+  margin-top: 60px;
   margin-bottom: -100px;
   padding: 70px 60px;
   border-radius: 10px;
-  color: darkmagenta;
 }
+
+.wardrobe-heading h2{
+  color: black !important;
+}
+
 
 .box-wrapper {
   display: grid;
@@ -855,16 +821,17 @@ wardrobe
   margin-bottom: 200px;
 }
 
+
 .shop-heading { 
   width: auto;
   height: auto;
   color: darkmagenta;
-  background-color: #080808;
+  background-color: #87e2d0;
   display: inline-block;
   font-size: 125%;
   margin-bottom: -100px;
   padding: 60px 80px;
-  border-radius: 10px;
+  border-radius: 100px;
   }
   
 .wardrobe-item img {
@@ -899,28 +866,6 @@ wardrobe
   font-family: 'Bilbo', cursive;
   border-radius: 3px;
 }
-
-
-/* responsiveness */
-
-/* @media screen and (min-width: 350px) {
-  html, body, .container{
-    width: 100%;
-    height: 100%;
-  }
-  body p {
-    font-size: 10px;
-    line-height: 15px;
-  }
-  body a {
-    font-size: 10px;
-  }
-  .navbar a, .nav-footer  {
-    padding: 15px 20px;
-  }
-} */
-
-
 
 /* 
 
@@ -967,4 +912,45 @@ input{
   background: rgb(255, 255, 255);
   padding: 38px 15px;
   margin-left: 10px;
+}
+
+
+/*
+
+
+
+
+
+*/
+
+.bg-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+
+  display: block;
+  background-image: url('https://res.cloudinary.com/kinkidy/image/upload/v1575372195/larobe/p1.png') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
+}
+@media only screen and (max-width: 767px) {
+  .bg-image {
+    /* The file size of this background image is 93% smaller
+       to improve page load speed on mobile internet connections */
+    background-image: url('pics/sa.jpg');
+  }
 }
